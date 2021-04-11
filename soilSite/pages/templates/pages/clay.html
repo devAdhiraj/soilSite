@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Clay Soil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+<!--
+
+TemplateMo 560 Astro Motion
+
+https://templatemo.com/tm-560-astro-motion
+
+-->
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="{% static 'video/gfp-astro-timelapse.mp4' %}" type="video/mp4">
+    </video>
+    <div class="page-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cd-slider-nav">
+              <nav class="navbar navbar-expand-lg" id="tm-nav">
+                <a class="navbar-brand" href="/home">RockStar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar-supported-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/home" data-no="1">Home</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/loam-soil" data-no="/loam-soil">Loam Soil</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/silt-soil" data-no="/silt-soil">Silt Soil</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item selected">
+                        <a class="nav-link" href="/clay-soil" data-no="4">Clay Soil</a>
+                        <div class="circle"></div>
+                      </li>
+                    </ul>
+                  </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid tm-content-container">
+        <ul class="cd-hero-slider mb-0 py-5">
+          <li class="px-3" data-page-no="1">
+            <div class="page-width-1 page-left">
+              <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+                <div class="intro-left tm-bg-dark">
+                  <h2 class="mb-4">Clay/Chalky Soil</h2>
+                  <p class="mb-4">
+                    Very Alkaline providing poor conditions for growing plants. They are suitable for vegetable growth but are poor for fruits.
+
+                  </p>
+                  <p>
+                    PH - 7.1-8.0
+                  </p>
+                  <p>
+                    The poor water and nutrient-retention means chalky soil can be extremely dry during hot weather, requiring frequent watering to keep the ground moist. That, combined with its high alkalinity, makes chalky soil nutrient-poor since plant roots are unable to absorb the locked-up iron and manganese.
+                    </p>
+                </div>
+                <div class="intro-right">
+                  <img src="{% static 'img/Chalky Soil.png' %}" alt="Image" class="img-fluid intro-img-1">
+                  <img src="{% static 'img/Clay.jpg' %}" alt="Image" class="img-fluid intro-img-2">
+                </div>
+                <div class="circle intro-circle-1"></div>
+                <div class="circle intro-circle-2"></div>
+                <div class="circle intro-circle-3"></div>
+                <div class="circle intro-circle-4"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="tm-bg-dark" id = "suggestion">
+        <h2 class="mb-4" id = "Lettuce" style="padding-left:25px;padding-top:35px">Lettuce</h2>
+        <p class="mb-4" id = "water retention" style="padding:25px;padding-top:2px">It is ideal to have lettuce grown in soil with high water retention, as lettuce needs an ample supply of water to grow.</p>
+        </div>
+        <div class="tm-bg-dark" id = "suggestion">
+        <h2 class="mb-4" id = "Radishes" style="padding-left:25px;padding-top:35px">Radishes</h2>
+        <p class="mb-4" id = "iron" style="padding:25px;padding-top:2px">Radishes are great space plants as they can be grown without natural lighting and are easy to grow. In addition they thrive in soil with high iron content which are found on extraterristrial planets</p>
+        </div>
+        <div class="tm-bg-dark" id = "suggestion">
+        <h2 class="mb-4" id = "Tomatoes" style="padding-left:25px;padding-top:35px">Tomatoes</h2>
+        <p class="mb-4" id = "magnesium/calcium" style="padding:25px;padding-top:2px">Tomatoes are ideal to grow if minerals such as magnesium and calcium are present which boost the growth of tomatoes</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+      <footer class="row mx-auto tm-footer">
+        <div class="col-md-6 px-0">
+          Adhiraj, Muhammad, Anantpal, Praviin
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/slick.js' %}"></script>
+  <script src="{% static 'js/templatemo-script.js' %}"></script>
+  <script>
+    function idealPlant(iron, mag, water){
+      if (iron == null || mag == null || water == null){
+        return null
+      }
+      if (iron > mag && iron > water){
+        return "Radishes"
+      } else if (mag > iron && mag > water){
+        return "Tomatoes"
+      } else {
+        return "Lettuce"
+      }
+    }
+    iron = null
+    mag = null
+    water = null
+
+    if (iron > mag && iron > water){
+        best = "iron"
+      } else if (mag > iron && mag > water){
+        best = "magnesium/calcium"
+      } else {
+        best = "water retention"
+    }
+
+    if (!(idealPlant(iron, mag, water) == null)){
+      document.getElementById(idealPlant(iron, mag, water)).style.color = "#00ff00"
+      document.getElementById(best).innerHTML = "Seems like this soil is has high " + best + " making " + idealPlant(iron, mag, water) + " the best crop, however it may be too Alkaline and needs to get TREATED first"
+    }
+  </script>
+</body>
+</html>
